@@ -158,7 +158,9 @@ const View = (props) => {
                 <p>{props.obj.ProductName}</p>
                 <p>₹{props.obj.Price}</p>
             </div>
+           
         </div>
+     
     )
 }
 

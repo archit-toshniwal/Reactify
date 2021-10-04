@@ -4,13 +4,12 @@ import Header from '../../shared/Header/Header';
 import axios from "axios";
 import {Empty} from "../Wish/Empty";
 import { useEffect, useState } from 'react';
-
+import Loader from "../../resusable/Loader";
 
 const Order = () => {
 
-   const [data, setData] = useState([
-
-   ]);
+   const [data, setData] = useState([]);
+   const [value,setValue] = useState(true);
 
    useEffect(() => {
       (async () => {
@@ -21,11 +20,12 @@ const Order = () => {
          });
          if(response.data.data)
          {
-            console.log(response.data.data);
             setData(response.data.data);
+            setValue(false);
          }
          else
          {
+            setValue(false);
             console.log(response);
          }
          
@@ -36,17 +36,19 @@ const Order = () => {
    return (
       <>
          <Header />
+         {value?  <Loader value={value}/> :
          <div className="stack">
             <h1 className="title is-2">My Orders</h1>
-            {data.length === 0 ? <Empty /> : <>
+            {data.length === 0 ? <Empty /> : 
+            <>
                <div className="bar">
                   <Search />
                </div>
                {data.map((obj) => <OrderBlock obj={obj} />)}
             </>
             }
-
          </div>
+         }
       </>)
 }
 

@@ -3,13 +3,14 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Box from "./Box";
 import { useHistory } from "react-router";
-
+import Loader from "../resusable/Loader";
 
 
 const Feature = (props) => {
 
     const history = useHistory();
     const [fashion, setFashion] = useState([]);
+    const [value,setValue] = useState(true);
 
     
 
@@ -25,6 +26,7 @@ const Feature = (props) => {
                     }
                 });
                 console.log(response.data.data);
+                setValue(false);
                 setFashion(response.data.data);
             }
             catch (err) {
@@ -38,8 +40,12 @@ const Feature = (props) => {
     }
 
     return (
+       <> 
+        {value ?
+        <Loader value={value}/>
+        :
         <div className="category cat">
-            <div className="upper-section">
+            <div className="upper-section">          
                 <h1 className="title is-2">{props.title}</h1>
                 <button onClick={(e) => showAllItemsofCategory(e)} className="button is-normal is-info">View All</button>
             </div>
@@ -49,6 +55,8 @@ const Feature = (props) => {
                 {sliced_arr.map((item) => <Box key={item._id} pic={item.picture} pname={item.ProductName} price={item.Price} />)}
             </div>
         </div>
+    }
+        </> 
     )
 }
 

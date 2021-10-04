@@ -36,7 +36,7 @@ const SignUp = () => {
       <>
          <div className="login-container">
             <div className="login-image-container">
-               <img className="" src="assests/images/customer.png" />
+               <img className="" src="assests/images/signUp.svg" />
             </div>
             <div className="container is-fluid container-custom">
                <div className="field">

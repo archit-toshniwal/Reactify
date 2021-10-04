@@ -70,7 +70,7 @@ const Login = () => {
       <>
         <div className="login-container">
          <div className="login-image-container">
-            <img className="" src="assests/images/key.png" />
+            <img className="" src="assests/images/login_1.svg" />
          </div>  
          <div className="container is-fluid container-custom">
             <div className="field">

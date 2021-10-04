@@ -3,13 +3,16 @@ import { useParams } from "react-router";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "../../shared/Header/Header";
-import View from "../../resusable/View";
+import View from "../../resusable/View"
+import Loader from "../../resusable/Loader";
 
 
 const ViewAll = () => {
 
     const [catergoryData, updateData] = useState([]);
     const { category } = useParams();
+    const [value,setValue] = useState(true);
+
 
     useEffect(() => {
         (async () => {
@@ -21,6 +24,7 @@ const ViewAll = () => {
                     }
                 });
                 // console.log(response.data.data);
+                setValue(false);
                 updateData(response.data.data);
             }
             catch (err) {
@@ -48,9 +52,11 @@ const ViewAll = () => {
                     <h1 className="title is-2" style={Css}>{category}</h1>
                 </div>
                 <hr />
+                {value? <Loader value={value}/> :
                 <div className="product-div" style={Style}>
                     {catergoryData.map((obj) => <View key={obj._id} obj={obj} />)}
                 </div>
+                }
             </div>
         </>
     )
