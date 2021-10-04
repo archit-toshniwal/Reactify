@@ -1,0 +1,436 @@
+html
+{
+    background-color: #F0F6F6;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Montserrat';
+}
+
+
+.field
+{
+    width:400px;
+    margin: 0 50%;
+    transform: translate(-50%);
+}
+
+.register
+{
+    margin-top: 10%;
+}
+
+.img-size
+{
+    width:200px;
+    height:200px;
+    margin-left:5%;
+}
+
+.container-grid
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.extra-round
+{
+    border-radius: 0;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+
+.extra-round-nav
+{
+    margin-left:0;
+    padding-right:10px;
+}
+
+.sub-nav
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category
+{
+    width:98%;
+    min-height: 200px;
+    background-color: #FCFDFD;
+    margin-left:50%;
+    transform: translate(-50%);
+    margin-top:10px;
+}
+
+.card-box
+{
+    margin-top:2%;
+    display: inline-block;
+    text-align: left;
+}
+
+.text-box
+{
+    padding:5px;
+    text-align: center;
+}
+
+.myhover:hover
+{
+    box-shadow: -5px -7px 37px -21px rgba(0,0,0,0.75);
+}
+
+.cat
+{
+    padding:15px;
+    margin-top:2%;
+}
+
+.cat h1
+{
+    padding: 0 10px;
+}
+
+.upper-section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.stack
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    
+}
+
+
+.white-box
+{
+    background-color: #FCFDFD;
+    width:600px;
+    min-height: 10px;
+    display: flex;
+    font-size:25px;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.icons a
+{
+    padding:5px;
+    margin:5px;
+    text-decoration: none;
+    color:black;
+}
+
+.bar
+{
+    width:50%;
+    min-height:40px;
+}
+
+.order-comp
+{
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background-color: white;
+    padding:10px;
+    margin-top:20px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.order-product p
+{
+    color:gray;   
+}
+
+.admin-add
+{
+    padding:20px;
+}
+
+.table-1
+{
+    width:90%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px 0;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.admin-col
+{
+    height: 100vh;
+}
+
+
+thead,tbody,tr,td
+{
+    padding: 10px 0;
+   border:1px solid gray;
+}
+
+.back-modal
+{
+    height: 100vh;
+}
+
+tr:hover
+{
+    background-color:steelblue;
+    color:white;
+}
+
+.mystyle
+{
+    position: absolute;
+    top:100px;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.myselect,select
+{
+    width:400px;
+}
+
+option
+{
+    font-size: 18px;
+}
+
+.admin-col
+{
+    height:100vh;
+}
+
+.full-width
+{
+    width:100%;
+    min-height:100vh;
+    background-color: white;
+}
+
+.product-div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*  */
+
+
+.Box
+{
+  padding:20px;
+  background-color:#FDFDFD;
+  margin:25px;
+  width:300px;
+  height:400px;
+  position: relative;
+}
+
+
+
+.img-box
+{
+  padding:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img-box img
+{
+    margin:5px;
+}
+
+.content
+{
+  text-align:center;
+  font-size: 1.2rem;
+}
+
+.icon-wish
+{
+    position: absolute;
+    top:10px;
+    right:20px;
+    cursor: pointer;
+}
+
+.container-product
+{
+    width:100%;
+    height:100vh;
+    position: absolute;
+}
+
+.modal-style-custom
+{   
+    width: 400px;
+}
+
+.contain
+{
+    font-family: 'Montserrat';
+    margin-top:10%;
+    width:80%;
+    margin-left:50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.image-conatiner , .Content-product
+{
+    padding:10px;
+    display: inline-block;
+}
+
+.image-conatiner img:hover
+{
+   transition: 0.4s ease-in;
+   transform: scale(1.1);
+}
+
+.product-info
+{
+    font-size: 1.2rem;
+    padding:5px;
+    margin:5px;
+   
+}
+
+.product-info p 
+{
+    padding:5px;
+    margin:5px;
+}
+
+.product-btns
+{
+    display: flex;
+    flex-direction: column;
+    padding-top:10px;
+    margin-top:20px;
+}
+
+.product-btns button
+{
+   margin-top:10px;
+}
+
+.modal-box-body
+{
+    width:600px;
+    min-height:400px;
+    font-weight:bolder;
+
+}
+
+.modal-box-close-btn
+{
+    text-align: right;
+}
+
+span .modal-box-body
+{
+    height:50px;  
+}
+
+.modal-box-body-lower
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.modal-box-body-first
+{
+    flex:50%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-box-body-second
+{
+    flex:50%;
+    padding:10px;
+}
+
+.modal-box-body-second p
+{
+    padding:10px;
+}
+
+.icon-dis
+{
+    position: absolute;
+    right:20px;
+}
+
+.login-container
+{
+    width: 75vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height:600px;
+    margin-left:50% ;
+    transform: translate(-50%);
+    flex-wrap: wrap;
+}
+
+
+.login-image-container , .container-custom
+{
+    flex:50%;
+    text-align: center;
+}
+
+.login-image-container img
+{
+    width:200px;
+    height:200px;
+}
+
+.modal-restricted
+{
+    width: 100vw;
+    height:100vh;
+    background-color: #272A2A;
+}
+
+.modal-restricted img
+{
+    width:300px;
+    height: 300px;
+    margin-left:50%;
+    margin-top:10%;
+    transform: translateX(-50%)
+}
